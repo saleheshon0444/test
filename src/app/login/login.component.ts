@@ -27,11 +27,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
         <h1 class="Header">Welccome</h1>
         <mat-form-field>
           <mat-label>Enter your UserName</mat-label>
-          <input matInput type="text" />
+          <input required matInput type="text" />
         </mat-form-field>
         <mat-form-field>
           <mat-label>Enter your password</mat-label>
-          <input matInput [type]="hide ? 'password' : 'text'" />
+          <input matInput required [type]="hide ? 'password' : 'text'" />
           <button
             mat-icon-button
             matSuffix

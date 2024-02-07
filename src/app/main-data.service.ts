@@ -9,6 +9,10 @@ export class MainDataService {
   // just for saving some where 
   userNaame = ''
   passWoord = ''
+  contentseleceted = false;
+  clicked(arg:boolean){
+    this.contentseleceted = arg
+  }
   submitApplication(userName: string, passWord: string) {
     this.userNaame = userName
     this.passWoord = passWord
